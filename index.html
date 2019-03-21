@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Font AweSome CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <!-- Static CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <title>PortFolio</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="nav-logo navbar-brand" href="/">My PortFolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end navbar-->
+
+    <!-- banner home -->
+    <div id="home" class="d-flex align-items-center">
+      <div class="overlay d-flex align-items-center">
+        <h2 class="intro m-2 p-2">Hi! I'm Tuan Anh.</h2>
+        <a class="btn btn-warning m-2 p-2" href="/">GET STARTED</a>
+      </div>  
+    </div>
+    <!-- end banner-->
+
+    <!-- container -->
+    <div class="container">
+      <!-- about -->
+      <div id="about">
+        <div class="row">
+          <div class="col-sm-12 col-md-5">
+            <img alt="avatar" class="ava img-responsive border rounded-circle" src="./Images/TA.jpg" width="320px" height="320px">
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <h2 class="m-3">ABOUT ME</h2>
+            <h2 class="m-3">Web Developer and Mobile App</h2>
+            <p class="text-secondary m-3">I'm Tuan Anh Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever. Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+            <div class="d-flex align-items-center">
+              <a class="m-3 p-2 rounded-circle" href="https://www.facebook.com/profile.php?id=100007027758396"><i class="fab fa-facebook" style="font-size: 24px;"></i></a>
+              <a class="m-3 p-2 rounded-circle" href="https://github.com/tuananh1998hust"><i class="fab fa-github" style="font-size: 24px;"></i></a>
+              <a class="m-3 p-2 rounded-circle" href="https://www.instagram.com/ss.15.12/"><i class="fab fa-instagram" style="font-size: 24px;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end about -->
+
+      <div id="work">
+        <h1 class="title text-center m-5 p-5">What I Can Do</h1>
+        <div class="row">
+          <div class="work-item col-sm-12 col-md-3 d-flex flex-column align-items-center justify-content-center">
+            <img class="img-responsive m-2" src="./Images/web-design.png">
+            <h5 class="m-2">Web Design</h5>
+            <p class="on-hover text-secondary m-2">Lorem Ipsum is simply dummy text </p>
+          </div>
+
+          <div class="work-item col-sm-12 col-md-3 d-flex flex-column align-items-center justify-content-center">
+            <img class="img-responsive m-2" src="./Images/web-dev.png">
+            <h5 class="m-2">Web Development</h5>
+            <p class="on-hover text-secondary m-2">Lorem Ipsum is simply dummy text </p>
+          </div>
+
+          <div class="work-item col-sm-12 col-md-3 d-flex flex-column align-items-center justify-content-center">
+            <img class="img-responsive m-2" src="./Images/responsive.png">
+            <h5 class="m-2">Responsive Design</h5>
+            <p class="on-hover text-secondary m-2">Lorem Ipsum is simply dummy text </p>
+          </div>
+
+          <div class="work-item col-sm-12 col-md-3 d-flex flex-column align-items-center justify-content-center">
+            <img class="img-responsive m-2" src="./Images/create-design.png">
+            <h5 class="m-2">Creative Design</h5>
+            <p class="on-hover text-secondary m-2">Lorem Ipsum is simply dummy text </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="project">
+        <div class="row select-item d-flex align-items-center justify-content-center mb-5">
+          <button class="btn btn-light" onclick="onItemClick()">All</button>
+          <button class="btn btn-light" onclick="onItemClick(type='nodejs')">Node JS</button>
+          <button class="btn btn-light" onclick="onItemClick(type='responsive')">Responsive</button>
+        </div>
+
+        <div id="item" class="row">
+          <!-- items is render in here -->  
+        </div>
+      </div>
+
+      <div id="contact">
+        <h1 class="text-center mb-5">Contact</h1>
+
+        <form action="#">
+          <div class="row mb-5">
+            <div class="col-sm-12 col-md-6">
+              <input class="input p-2" type="text" name="name" placeholder="Name">
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <input class="input p-2" type="email" name="email" placeholder="Email">
+            </div>
+          </div>
+
+          <div class="row mb-5">
+            <div class="col-12">
+              <textarea class="input" name="mes" placeholder="How Can I Help You"></textarea>
+            </div>
+          </div>
+
+          <button class="btn btn-block btn-outline-warning">SEND</button>
+        </form>
+      </div>
+    </div>
+    <!-- end container -->
+
+    <div id="footer">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h2 class="mb-2">My PortFolio</h2>
+          <p class="mb-2">Nguyen Tuan Anh</p>
+          <p class="mb-2">Web Developer</p>
+          <p class="mb-2">Mobile App</p>          
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+          <h2 class="mb-2">Address</h2>
+          <p class="mb-2">Hanoi, VietNam</p>
+          <p class="mb-2">Phone: (+84)349081709</p>
+          <p class="mb-2">Email: tuananh1998.hust@gmail.com</p>          
+        </div>
+      </div>
+
+      <p class="text-center p-2">Design by Nguyen Tuan Anh © 2019.</p>
+    </div>
+    
+    <!-- render items -->
+    <script src="./JS/render.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
